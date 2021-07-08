@@ -16,8 +16,15 @@
      width=450
      height=200/>
  * Для подсчёта результата нажмите кнопку **=**. Результат будет выведен во второй полосе.
+ <img
+      src="https://github.com/FedosOnGIT/Calculator/blob/master/app/src/main/res/drawable/result.jpg"
+      width=170
+      height=320/>
 
 ## Парсер выражений
 Для [парсера выражений](https://github.com/FedosOnGIT/Calculator/blob/master/app/src/main/java/com/example/calculator/Calculator.kt) используется метод рекурсивного спуска с приоритетатми, где
 * 0 - операции **+** и **-**
 * 1 - операции **\*** и **\\**
+* 2 - операция унарного **-**
+* 3 - операция возведения в степень **^**
+* 4 - Все оставшиеся унарные операции, а также чтение числа и распознавание выражений в **()**
